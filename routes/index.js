@@ -9,7 +9,7 @@ const registerRouters = (app) => {
     if (file.includes("router")) {
       const router = require(`./${file}`);
 
-      console.log(router);
+      // console.log(router);
 
       app.use(router.routes());
       app.use(router.allowedMethods());
